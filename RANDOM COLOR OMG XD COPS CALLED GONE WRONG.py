@@ -1,0 +1,16 @@
+from UTIL import*
+def pick_a_color_any_color(dur=0.1):
+    MaximizePaint()
+    mouse.move(1440, 100)
+    mouse.click()
+    x0=random.randint(1272, 1287)
+    y0=random.randint(308, 595)
+    mouse.move(x0, y0, duration=dur)
+    mouse.click()
+    x1=random.randint(968, 1231)
+    y1=random.randint(308, 595)
+    mouse.move(x1, y1, duration=dur)
+    mouse.click()
+    mouse.move(1270, 270)
+    mouse.click()
+pick_a_color_any_color()
