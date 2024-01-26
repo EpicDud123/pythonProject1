@@ -1,6 +1,5 @@
 import random
-number_list = ["tension", "microphone", "throw", "pattern", "talk", "install", "self", "ladder", "prefer", "dealer"
-                                                                                                           "", "shower", "arrest", "dog", "mouth", "pipe", "fund", "profit", "lion", "book", "convince"]
+number_list = ["tension", "microphone", "throw", "pattern", "talk", "install", "self", "ladder", "prefer", "dealer", "", "shower", "arrest", "dog", "mouth", "pipe", "fund", "profit", "lion", "book", "convince", "symptom", "conception", "spell", "tract", "scratch", "explicit", "manager", "cup", "driver", "mouth", "crackpot", "favourite", "ostracize", "concrete", "find", "mug", "tender", "thick", "bucket", "construct", "well", "freedom", "north", "truck", "hang", "be", "reduce", "single", "square", "shelter", "feather", "style", "equation", "sector", "accumulation", "sense", "feminist", "excavation", "provincial", "diamond", "infection", "request", "landowner", "slot", "seasonal", "homosexual", "us", "peanut", "with", "draw", "catch", "pneumonoultramicroscopicsilicovolcanoconiosis", "pneumonoultramicroscopicsilicovolcanoconiosis", "pneumonoultramicroscopicsilicovolcanoconiosis", "pneumonoultramicroscopicsilicovolcanoconiosis"]
 # welcoming the user
 name = input("What is your name? ")
 
