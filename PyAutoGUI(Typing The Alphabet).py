@@ -2,4 +2,7 @@ import time
 
 time.sleep(5)
 import pyautogui
-pyautogui.typewrite('abcdefghijklmnopqrstuvwxyz', interval=1.29/30)
+x=0
+while x<6000:
+    pyautogui.typewrite('m ', interval=0.01)
+    x+=1

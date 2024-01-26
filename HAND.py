@@ -1,3 +1,5 @@
+import random
+
 import cv2
 import mediapipe as mp
 import mouse
@@ -13,7 +15,7 @@ last_right_hand_x = None
 last_right_hand_y = None
 VISIBILITY_THRESHOLD = 0.8
 MOUSEHELPDOWN = False
-
+Rightclicjif=False
 
 # For webcam input:
 cap = cv2.VideoCapture(0)
@@ -57,14 +59,19 @@ with mp_hands.Hands(
                 mouse.move(new_mouse_x, new_mouse_y, duration=0.001)
                 if abs(right_hand_x - thumb_x)<0.03 and abs(right_hand_y - thumb_y)<0.03:
                     # if not MOUSEHELPDOWN:
-                    pyautogui.mouseDown()
+                    mouse.click()
                     MOUSEHELPDOWN=True
                 else:
                     # if MOUSEHELPDOWN:
                     pyautogui.mouseUp()
                     MOUSEHELPDOWN=False
-                #if thumb_y<left_hand_y:
-                    #mouse.click(button=mouse.RIGHT)
+                if thumb_y<right_hand_y:
+                    if not Rightclicjif:
+                        mouse.click(button=mouse.RIGHT)
+                        Rightclicjif=True
+                else:
+                    Rightclicjif=False
+
 
             last_right_hand_x = right_hand_x
             last_right_hand_y = right_hand_y
